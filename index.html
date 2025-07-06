@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>"Who is real friend"</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<!-- ✨ หน้าที่ 1 : ถามชื่อ -->
+  <div id="screen1" class="card">
+    <h1>Hello, what's your name?</h1>
+
+    <div class="buttons">
+      <button class="nameBtn" data-name="Ching">Ching</button>
+      <button class="nameBtn" data-name="Ping">Ping</button>
+      <button class="nameBtn" data-name="Gift">Gift</button>
+      <button class="nameBtn" data-name="Fang">Fang</button>
+    </div>
+  </div>
+
+  <!-- 💖 หน้าที่ 2 : To day is your birthday? (เริ่มซ่อนไว้) -->
+  <div id="screen2" class="card hidden">
+    <img src="images/cute-dog.png" class="image" alt="Cute Dog">
+    <h1>To day is your birthday?</h1>
+
+    <div class="buttons">
+      <button id="yesBtn">Yes</button>
+      <button id="noBtn">No</button>
+    </div>
+  </div>
+
+  <!-- 🎁 หน้าที่ 3: PNG ขยับ + เพลง -->
+<div id="screen3" class="card hidden">
+  <h1>Happy Ching Day 🎶</h1>
+  <img id="birthdayImage" src="images/Ching-face.png" class="bouncy-image" alt="Birthday Cake">
+
+  <!-- เพลง happy birthday -->
+  <audio id="hbdAudio" src="audio/happy-birthday.mp3"></audio>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
