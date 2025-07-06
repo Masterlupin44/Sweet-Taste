@@ -42,11 +42,31 @@ button {
 }
 
 #yesBtn {
+  font-weight: bold;
   background-color: #28a745;
+  border: 2px solid #218838;
+  transition: background-color 0.3s, transform 0.2s, border 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 #noBtn {
+  font-weight: bold;
   background-color: #c82333;
+  border: 2px solid #bd2130;
+  transition: background-color 0.3s, transform 0.2s, border 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+#yesBtn:hover {
+  background-color: #218838;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+#noBtn:hover {
+  background-color: #bd2130;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
 }
 
 .hidden { 
@@ -59,7 +79,7 @@ button {
   max-width: 100%;
   border-radius: 20px;
   margin-bottom: 20px;
-
+  
   animation: bounce 1s infinite;
   margin-top: 20px;
 }
@@ -69,3 +89,18 @@ button {
   50% { transform: translateY(-20px); }
 }
 
+.nameBtn {
+  background-color: #ffb6c1;     /* ชมพูพาสเทล */
+  color: white;                  /* ตัวอักษรสีขาว */
+  border: 2px solid #f794c0;     /* ขอบชมพูเข้ม */
+  border-radius: 12px;
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);  /* เงาเบาๆ */
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+}
+
+.nameBtn:hover {
+  background-color: #ff94b8;     /* ชมพูเข้มขึ้นตอน hover */
+  transform: translateY(-3px);   /* ลอยขึ้น */
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15); /* เงาชัดขึ้น */
+}
