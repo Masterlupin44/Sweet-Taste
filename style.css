@@ -104,3 +104,12 @@ button {
   transform: translateY(-3px);   /* ลอยขึ้น */
   box-shadow: 0 8px 16px rgba(0,0,0,0.15); /* เงาชัดขึ้น */
 }
+
+button:active,
+.nameBtn:active,
+#yesBtn:active,
+#noBtn:active {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  filter: brightness(0.95);
+}
